@@ -5,9 +5,9 @@ set -eu
 source ./env.sh
 
 if [[ -d venv ]];then
-    _py=venv/bin/python3
+    _py=venv/scripts/python3
 else
-    _py=python3
+    _py=python
 fi
 
 execute_sql schema.sql
